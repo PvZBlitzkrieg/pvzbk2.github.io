@@ -26,7 +26,7 @@
             }
             .nav a{
                 color: #fff;
-                padding: 20px,40px;
+                padding: 10px,20px;
                 display: inline-block;
             }
             .nav a:hover{
@@ -34,6 +34,20 @@
                 color:#000
             }
         </style>
+        <script>
+            function clickbk(){
+                var mt=document.getElementById("mt")
+                mt.style.display="none";
+                var mr=document.getElementById("mr")
+                mr.style.display="block";
+            }
+            function clicked(){
+                var mt=document.getElementById("mt")
+                mt.style.display="block";
+                var mr=document.getElementById("mr")
+                mr.style.display="none";
+            }
+        </script>
     </head>
     <body>
         <div class="main">
@@ -42,11 +56,23 @@
             </div>
             <div class="nav">
                 <h2>
+                <a href="javascript:void(0);" onclick="clicked()">TWEditer</a>
                 <a href="https://pvzblitzkrieg.github.io/">PvZNr</a>
-                <a href="#">PvZBk</a>
-                <a href="#">BkMgr</a>
+                <a href="https://www.123pan.com/s/rSXuVv-fRGxh">PvZBk</a>
+                <a href="javascript:void(0);" onclick="clickbk()">BKMgr</a>
                 <a href="#">其它</a>
                 </h2>
+            </div>
+            <div class="main">
+                <p id="mt">
+                    基于Android的ThreeWaston运行程序:TWEditer<br>
+                    <a href="https://www.123pan.com/s/rSXuVv-MRGxh">下载</a>
+
+                </p>
+                <p id="mr" style="display: none;">
+                    基于Android的ELF结构解析器:BKMgr<br>
+                    <a href="https://www.123pan.com/s/rSXuVv-fRGxh">下载</a>
+                </p>
             </div>
         </div>
     </body>
